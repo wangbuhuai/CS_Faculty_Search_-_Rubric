@@ -1,0 +1,194 @@
+/* Created by Dayu Wang (dwang@stchas.edu) on 2021-12-16 */
+
+/* Last updated by Dayu Wang (dwang@stchas.edu) on 2023-03-06 */
+
+
+body {
+    margin: 6pt auto;
+    padding: 0;
+    background: white;
+    font-family: Verdana, sans-serif;
+    font-size: 11pt;
+    color: black;
+    width: 1008px;
+    line-height: 150%;
+}
+
+p {
+    margin:0;
+    padding:0;
+}
+
+#scc-logo {
+    display: block;
+    float:left;
+    position:absolute;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+}
+
+.orange-red {
+    color: orangered;
+}
+
+#committee {
+    text-align: center;
+    font-size: 10pt;
+    color: #7f1428;
+}
+
+#title {
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+    text-align: center;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #7f1428;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: whitesmoke;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    font-family: Verdana, sans-serif;
+    font-size: 11pt;
+    color: blue;
+}
+
+input[type="text"] {
+    width: 300px;
+}
+
+table {
+    border-collapse: collapse;
+    border: none;
+    margin: 10pt auto 0 auto;
+    line-height: normal;
+    width: 100%;
+}
+
+#scoring td {
+    border: 2px solid darkcyan;
+    padding: 3pt 6pt;
+    vertical-align: middle;
+    text-align: left;
+    font-size: 10pt;
+    color: black;
+    background: transparent;
+}
+
+#scoring .table-data > td:first-child {
+    border-top: none;
+}
+
+#scoring .table-data > td:nth-child(2) {
+    border-top: none;
+    border-left: none;
+}
+
+#scoring .table-data > td:nth-last-child(1) {
+    border-top:none;
+    border-left: none;
+}
+
+#scoring td:nth-last-child(1) {
+    padding:0;
+    background: whitesmoke;
+}
+
+#scoring .table-head > td {
+    text-align: center;
+    font-weight: bold;
+    background: lightcyan;
+}
+
+#scoring .table-head > td:first-child {
+    width: 215px;
+}
+
+#scoring .table-head > td:nth-child(2) {
+    border-left: none;
+    width: 160px;
+}
+
+#scoring .table-head > td:nth-last-child(1) {
+    border-left: none;
+    width: 293px;
+}
+
+label, .vertical-middle {
+    vertical-align: middle;
+}
+
+textarea {
+    padding: 3pt 4pt;
+    margin:0;
+    border: none;
+    outline: none;
+    background: transparent;
+    display: flex;
+    width: 99%;
+    resize: none;
+    font-family: Verdana, sans-serif;
+    font-size: 9pt;
+    color: blue;
+    overflow: hidden;
+}
+
+.one-line {
+    height: 26px;
+}
+
+.two-line {
+    height: 42px;
+}
+
+.three-line {
+    height: 55px;
+}
+
+.double-spacing {
+    margin-top: 24pt;
+}
+
+#result td {
+    border: none;
+    padding: 0;
+    vertical-align: middle;
+    text-align: left;
+    background: transparent;
+}
+
+#result td:first-child {
+    width: 100px;
+}
+
+#result td:nth-child(2) {
+    border-bottom: 2px solid black;
+    text-align: center;
+    font-weight: bold;
+    background: #ffff99;
+    width: 100px;
+}
+
+#result td:nth-last-child(1) {
+    text-align: right;
+}
+
+#save, #save2 {
+    display: block;
+    margin: 24pt auto 0 auto;
+    padding: 3pt 6pt;
+    font-family: Verdana, sans-serif;
+    font-size: 11pt;
+}

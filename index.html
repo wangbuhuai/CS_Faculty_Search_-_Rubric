@@ -1,0 +1,189 @@
+<!-- Created by Dayu Wang (dwang@stchas.edu) on 2021-12-16 -->
+
+<!-- Last updated by Dayu Wang (dwang@stchas.edu) on 2023-03-06 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CS Faculty Search - Rubric</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.1/html2pdf.bundle.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<div id="output">
+<p>
+    <img id="scc-logo" style="float:left;position:absolute;" src="https://drive.google.com/uc?export=download&id=18vGGS4Au7SnL9nflu3ZAsi-Xy8r4JhD3" alt="St. Charles Community College">
+</p>
+<p id="committee">Computer Science Faculty Search Committee <span class="orange-red">(Mar 2023)</span></p>
+<p id="title">Application Evaluation Rubric</p>
+
+<p>
+    <label>Applicant Name: <input id="candidate-name" type="text"></label>
+</p>
+<table id="scoring">
+    <tbody>
+    <tr class="table-head">
+        <td>Category</td>
+        <td>Evaluation</td>
+        <td>Comments</td>
+    </tr>
+    <tr class="table-data">
+        <td>Master or Ph.D. Degree<br><span style="color:orangered;">(Computer science, web design, or related)</span></td>
+        <td>
+            <label><input class="0" type="radio" name="master-degree"><span class="vertical-middle"> Yes</span></label><br>
+            <label><input class="0" type="radio" name="master-degree"><span class="vertical-middle"> No - Stop further evaluation.</span></label>
+        </td>
+        <td>
+            <label>
+                <textarea class="two-line" wrap="soft"></textarea>
+            </label>
+        </td>
+    </tr>
+    <tr class="table-data">
+        <td>Full-Time College Teaching Experience</td>
+        <td>
+            <label><input class="5" type="radio" name="teaching-experience"><span class="vertical-middle"> 3+ years <span class="orange-red">(5 pts)</span></span></label><br>
+            <label><input class="3" type="radio" name="teaching-experience"><span class="vertical-middle"> 1-2 years <span class="orange-red">(3 pts)</span></span></label>
+        </td>
+        <td>
+            <label>
+                <textarea class="two-line" wrap="soft"></textarea>
+            </label>
+        </td>
+    </tr>
+    <tr class="table-data">
+        <td>Programming Language Experience<br><span style="color:orangered;">(Python, Java, and/or C++)</span></td>
+        <td>
+            <label><input class="5" type="radio" name="language-experience-1"><span class="vertical-middle"> 3 languages listed <span class="orange-red">(5 pts)</span></span></label><br>
+            <label><input class="3" type="radio" name="language-experience-1"><span class="vertical-middle"> 2 languages listed <span class="orange-red">(3 pts)</span></span></label><br>
+            <label><input class="1" type="radio" name="language-experience-1"><span class="vertical-middle"> 1 language listed <span class="orange-red">(1 pt)</span></span></label>
+        </td>
+        <td>
+            <label>
+                <textarea class="three-line" wrap="soft"></textarea>
+            </label>
+        </td>
+    </tr>
+    <tr class="table-data">
+        <td>Web Development Experience<br><span style="color:orangered;">(HTML, CSS, JavaScript, jQuery, and/or PHP)</span></td>
+        <td>
+            <label><input class="5" type="radio" name="language-experience-2"><span class="vertical-middle"> 5 languages listed <span class="orange-red">(5 pts)</span></span></label><br>
+            <label><input class="3" type="radio" name="language-experience-2"><span class="vertical-middle"> 4 languages listed <span class="orange-red">(3 pts)</span></span></label><br>
+            <label><input class="1" type="radio" name="language-experience-2"><span class="vertical-middle"> 1-3 languages listed <span class="orange-red">(1 pt)</span></span></label>
+        </td>
+        <td>
+            <label>
+                <textarea class="three-line" wrap="soft"></textarea>
+            </label>
+        </td>
+    </tr>
+    <tr class="table-data">
+        <td>Database Experience <span style="color:orangered;">(SQL, Oracle, Access)</span></td>
+        <td>
+            <label><input class="2" type="radio" name="database-experience"><span class="vertical-middle"> 1+ language listed <span class="orange-red">(2 pts)</span></span></label>
+        </td>
+        <td>
+            <label>
+                <textarea class="one-line" wrap="soft"></textarea>
+            </label>
+        </td>
+    </tr>
+    <tr class="table-data">
+        <td>Developing Course Curriculum and Materials</td>
+        <td>
+            <label><input class="3" type="radio" name="course-development-experience"><span class="vertical-middle"> Substantial evidence <span class="orange-red">(3 pts)</span></span></label><br>
+            <label><input class="1" type="radio" name="course-development-experience"><span class="vertical-middle"> Some evidence <span class="orange-red">(1 pt)</span></span></label>
+        </td>
+        <td>
+            <label>
+                <textarea class="two-line" wrap="soft"></textarea>
+            </label>
+        </td>
+    </tr>
+    <tr class="table-data">
+        <td>Addressing Teaching a Diverse Population</td>
+        <td>
+            <label><input class="2" type="radio" name="diversity-experience"><span class="vertical-middle"> Yes <span class="orange-red">(2 pts)</span></span></label>
+        </td>
+        <td>
+            <label>
+                <textarea class="one-line" wrap="soft"></textarea>
+            </label>
+        </td>
+    </tr>
+    <tr class="table-data">
+        <td>Using Technology in Teaching</td>
+        <td>
+            <label><input class="3" type="radio" name="technology-experience"><span class="vertical-middle"> Yes with details <span class="orange-red">(3 pts)</span></span></label><br>
+            <label><input class="1" type="radio" name="technology-experience"><span class="vertical-middle"> Yes but mention LMS only <span class="orange-red">(1 pt)</span></span></label>
+        </td>
+        <td>
+            <label>
+                <textarea class="two-line" wrap="soft"></textarea>
+            </label>
+        </td>
+    </tr>
+    <tr class="table-data">
+        <td><span style="color:orangered;">(Preferred)</span> Doctorate Degree</td>
+        <td>
+            <label><input class="2" type="radio" name="doctorate-degree"><span class="vertical-middle"> Yes <span class="orange-red">(2 pts)</span></span></label>
+        </td>
+        <td>
+            <label>
+                <textarea class="one-line" wrap="soft"></textarea>
+            </label>
+        </td>
+    </tr>
+    <tr class="table-data">
+        <td><span style="color:orangered;">(Preferred)</span> Industrial CS Experience</td>
+        <td>
+            <label><input class="3" type="radio" name="industrial-experience"><span class="vertical-middle"> 3+ years <span class="orange-red">(3 pts)</span></span></label><br>
+            <label><input class="2" type="radio" name="industrial-experience"><span class="vertical-middle"> 2+ years <span class="orange-red">(2 pts)</span></span></label><br>
+            <label><input class="1" type="radio" name="industrial-experience"><span class="vertical-middle"> 1+ years <span class="orange-red">(1 pt)</span></span></label>
+        </td>
+        <td>
+            <label>
+                <textarea class="three-line" wrap="soft"></textarea>
+            </label>
+        </td>
+    </tr>
+    <tr class="table-data">
+        <td><span style="color:orangered;">(Preferred)</span> Assessment to Improve Teaching</td>
+        <td>
+            <label><input class="2" type="radio" name="assessment-experience"><span class="vertical-middle"> Yes <span class="orange-red">(2 pts)</span></span></label>
+        </td>
+        <td>
+            <label>
+                <textarea class="one-line" wrap="soft"></textarea>
+            </label>
+        </td>
+    </tr>
+    <tr class="table-data">
+        <td>Other Notes</td>
+        <td colspan="2">
+            <label>
+                <textarea class="two-line" id="other-notes" wrap="soft"></textarea>
+            </label>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<table id="result">
+    <tbody>
+    <tr>
+        <td>Total Points:</td>
+        <td id="total">0</td>
+        <td class="orange-red">&nbsp;(Automatically Calculated)</td>
+        <td><label>Committee Member Name: <input type="text"></label></td>
+    </tr>
+    </tbody>
+</table>
+</div>
+<button id="save">Save as PDF</button>
+</body>
+</html>
